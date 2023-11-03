@@ -7,18 +7,18 @@ import { TranslocoHttpLoader } from './transloco-loader';
 
 
 @NgModule({
-  exports: [ TranslocoModule ],
+  exports: [TranslocoModule],
   providers: [
-      provideTransloco({
-        config: {
-          availableLangs: ['en', 'ru', 'he'],
-          defaultLang: 'en',
-          // Remove this option if your application doesn't support changing language in runtime.
-          reRenderOnLangChange: true,
-          prodMode: !isDevMode(),
-        },
-        loader: TranslocoHttpLoader
-      }),
+    provideTransloco({
+      config: {
+        availableLangs: ['en', 'ru', 'he', 'de', 'fa'],
+        defaultLang: 'en',
+        // Remove this option if your application doesn't support changing language in runtime.
+        reRenderOnLangChange: true,
+        prodMode: !isDevMode(),
+      },
+      loader: TranslocoHttpLoader
+    }),
   ],
 })
-export class TranslocoRootModule {}
+export class TranslocoRootModule { }

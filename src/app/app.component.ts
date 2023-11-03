@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngLanguageEx';
+
+  constructor(private readonly translocoService: TranslocoService) { }
+
+  ngOnInit() {
+    this.translocoService.translate('title');
+    this.translocoService.translate('form.firstName')
+  }
 }

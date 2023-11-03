@@ -1,0 +1,54 @@
+<div class="header" *transloco="let t; read: 'header'">
+  <div
+    class="pt-5 sm:text-4xl text-xl flex sm:flex-row flex-col justify-center item-center"
+  >
+    <app-language-selector
+      class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
+    ></app-language-selector>
+
+    <div class="flex-2 sm:text-4xl text-xl flex justify-center item-center">
+      <img
+        src="/assets/images/angular-logo.png"
+        alt="Angular Text Logo"
+        class="angular-img"
+      />
+      <h1 class="my-auto">{{ t("title") }}</h1>
+    </div>
+
+    <div class="flex-1"></div>
+  </div>
+
+  <div
+    class="flex sm:flex-row flex-col item-center justify-around text-bold sm:p-10 p-5"
+  >
+    <button>
+      <a
+        href="https://github.com/hossein13m/angular-multi-lingual"
+        target="_blank"
+        class="flex items-center"
+      >
+        <img
+          src="/assets/images/github.png"
+          alt="GitHub Logo"
+          class="mx-2 link-logo"
+        />
+        <h1>{{ t("github-btn") }}</h1>
+      </a>
+    </button>
+
+    <button class="sm:mt-auto mt-5">
+      <a
+        href="https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c"
+        target="_blank"
+        class="flex items-center"
+      >
+        <img
+          src="/assets/images/medium.png"
+          alt="Medium Logo"
+          class="mx-2 link-logo"
+        />
+        <h1>{{ t("medium-btn") }}</h1>
+      </a>
+    </button>
+  </div>
+</div>

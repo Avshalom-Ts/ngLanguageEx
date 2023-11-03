@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { HeaderModule } from './components/header/header.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TranslocoRootModule } from './transloco-root.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

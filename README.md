@@ -15,6 +15,8 @@ ng add @ngneat/transloco
 
 ### [Medium Tutorial](https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c).
 
+#### [GitHub Repo EX](https://github.com/hossein13m/angular-multi-lingual).
+
 1. [Tansloco](https://ngneat.github.io/transloco/) -  The internationalization (i18n) library for Angular.
 
 2. [List of ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes#).
